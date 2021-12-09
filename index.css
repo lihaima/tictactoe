@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(248, 241, 231);
+}
+h1{
+    text-align: center;
+    font-size: 80px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.bd{
+    position: relative;
+    width: 498px;
+    height: 498px;
+    margin: 0 auto;
+}
+.bd .o .row .cell:hover.cell::before{
+    content: "o";
+    font-size: 150px;
+    line-height: 126px;  
+    color: #cecece;
+}
+.bd .x .row .cell:hover.cell::before{
+    content: "x";
+    font-size: 150px;
+    line-height: 126px;  
+    color: #cecece;
+}
+.bd .bd-j .row{
+    width: 498px;
+    height: 166px;
+    border-bottom: 5px solid #000;
+}
+.bd .bd-j .row:last-child{
+    border-bottom:0
+}
+.bd .bd-j .row .cell{
+    float: left;
+    width: 166px;
+    height: 166px;
+    border-right: 5px solid #000;
+    cursor: pointer;
+    text-align: center;
+    
+}
+.bd .bd-j  .cell:last-child{
+    border-right:0
+}
+.bd .bd-j .row .o::before{
+    content: "o";
+    color: #000;
+    font-size: 150px;
+    line-height: 126px; 
+}
+.bd .bd-j .row .x::before{
+    content: "x";
+    color: #000;
+    font-size: 150px;
+    line-height: 126px; 
+}
+.bd .bd-j .row .cell:hover.o::before{
+    content: "o";
+    color: #000;
+}
+.bd .bd-j .row .cell:hover.x::before{
+    content: "x";
+    color: #000;
+}
+.msg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(69, 133, 136, 0.4);
+    width: 498px;
+    height: 498px;
+    display: none;
+   text-align: center;
+}
+.msg p{
+ 
+ font-size: 50px;
+ color:aquamarine;
+margin-top: 200px;
+margin-left: 30px;
+}
+.msg button{
+    margin-top: 40px;
+  width: 150px;
+  height: 50px;
+  margin-left: 30px;
+  background-color: #fff;
+}
